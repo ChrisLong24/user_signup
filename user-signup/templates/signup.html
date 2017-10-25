@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body>
+    
+        
+            
+            <div>
+    <h1>Signup </h1>
+    
+    <form action="http://signup" method="POST" target="_blank" onsubmit="try {return window.confirm(&quot;You are submitting information to an external page.\nAre you sure?&quot;);} catch (e) {return false;}">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>username</label>
+                    </td>
+                    <td>
+                        <input name="username" type="text">
+                        <span>{{fail_user}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>password</label>
+                    </td>
+                    <td>
+                        <input name="password" type="password">
+                        <span>{{fail_password}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label> verify password</label>
+                    </td>
+                    <td>
+                        <input name="verify" type="password">
+                        <span>{{fail_verify}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>email (optional)</label>
+                    </td>
+                    <td>
+                        <input name="email" type="text">
+                        <span>{{fail_email}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input name="button" type="submit">
+    </form>
+    
+    </div></body></html>
